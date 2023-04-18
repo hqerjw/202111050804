@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS基础</title>
+    <link href="./EsscssEG.css"rel="stylesheet"type="text/css">
+    <style type="text/css">
+        p:first-line{font: weight 200px;color:chartreuse;font-size: 120%;}
+        h1{color:#d4d4d4;font: size 30px;font-family: impact}
+        <!--
+            p.left{text-align:left;background-color: indianred;}
+            p.center{text-align: center;}
+            -->
+        <!--
+            h1,h2,h3,h4{color: navy;font-family: 隶书;}
+            -->
+        div{color: brown;font-size:20pt;font-weight:bold}
+        p{color:crimson;font-size:20pt;font-sytle:italic}
+        <!--
+            a:link{font-size: 18px;color;black;text-decoration: none}
+            a:hover{font-size:28px;color:red;text-decoration: none;}
+            a:active{font-size: 38px;color:gray;text-decoration: none;}
+            a:visited{font-size: 48px;color:blue;text-decoration: none;}
+            -->
+        <!--
+            a.ClassFst:link{font-size: 18px;color: tan;text-decoration: none;}
+            a.ClassFst:visited{font-size: 18px;color: black;text-decoration: none;}
+            a.ClassSec:link{font-size: 18px;color:gray;text-decoration: none;}
+            a.ClassSec:visited{font-size: 18px;color: greenyellow;text-decoration: none;}
+            -->
+            h7:first-letter
+            {
+                color: black;
+                font-weight: 200;
+                font-size: 130%;
+                float:center
+            }
+            p{line-height: 40px;word-spacing: 4px;text-indent: 30px;text-decoration: underline;margin :auto}
+    p{font-family: 隶书;font-weight: bolder;color:blueviolet;margin: auto;}
+g{font-size: 14px;font-style: italic;color: brown;font-weight: bold;}
+.div1{
+    border:2px solid #000000;
+}
+.div2{
+    border:1px dotted blue;
+}
+
+    
+</style> 
+</head>
+<body>
+   
+    <h1 style="color:blueviolet;font-size: 30px;font-family: impact">CSS样式</h1>
+    <p class="left">这个段落是左对齐的！</p>
+    <p class="center">这个段落是居中对齐的！</p>
+    <h1>我要</h1>
+    <h2>努力</h2>
+    <h3>学习</h3>
+    <h4>Web</h4>
+    <div>
+        <p>
+            我已经走到黑夜的尽头
+        </p>
+    </div>
+    <p>
+    <div>
+        却来不及看见黎明的曙光
+    </div>    
+    </p>
+    <a href="#锚点">开启新世界</a>
+    <a name="锚点"><h3>欢迎来到新世界</h3></a>
+    <a class="ClassFst"herf="锚点1">风之极1</a><br>
+    <a class="ClassSec"href="锚点2">落日耀2</a><br><br><br>
+    <a name="锚点1"><h3>落霞与孤鹜齐飞1</h3></a><br><br><br>
+    <a name="锚点2"><h3>秋水共长天一色2</h3></a>
+    <p>
+        盖上被子做未完成的梦
+        <br>
+        或者掀开被子做未完成的梦。
+    </p>
+    <p>
+        身体扛不住的时候，意志会带你杀出重围。
+    </p>
+    <div>
+        <h6>折风渡夜</h6>
+        <g>
+            
+            深白脚印徘徊谁家房檐。记忆的书签，痴梦不肯卸；
+            提笔诗染几页作悲怯。
+            我折一缕清风，渡落雪的夜；
+        </g>
+    </div>
+    <div id="div1"class="div1"style="position;absolute;background-color:#66CCFF;
+    width:50px;height:80px">DIV1
+    </div>
+    <div id="div2"class="div2"style="position:relative;top:50px;left:50px;background-color:#CCCCCC;width:50px;
+    height:80px">DIV2
+    </div>
+    
+</body>
+</html>
