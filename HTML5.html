@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS3</HTML5></title>
+    <style type="text/css">
+ #rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(/i/paper.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+h1 {
+  text-shadow: 2px 2px red;
+}
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg); /* 标准语法 */
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+    </style>
+</head>
+<body>
+    <video width="320" height="240" controls="controls">
+        <source src="..\新建文件夹\shipin5\shipin5.mp4" type="video/ogg">
+        <source src="..\新建文件夹\shipin5\shipin5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <h1>海阔天空</h1>
+      <audio controls="controls">
+        <source src="..\新建文件夹\shipin5\yinpin.mp3" type="audio/ogg">
+        <source src="..\新建文件夹\shipin5\yinpin.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    
+        
+    <form action="demo-form.php">
+    生日: <input type="date" name="bday">
+    <input type="submit">
+    </form>
+    <h1>border-radius 属性</h1>
+
+<p>拥有指定背景颜色的元素的圆角：</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>带边框元素的圆角：</p>
+<p id="rcorners2">Rounded corners!</p>
+<p>拥有背景图片的元素的圆角：</p>
+<p id="rcorners3">Rounded corners!</p>
+<h1>rotate() 方法</h1>
+<p>rotation() 方法顺时针或逆时针旋转元素。</p>
+
+<div>
+这是一个普通的 div 元素。
+</div>
+
+<div id="myDiv">
+这个 div 元素顺时针旋转 20 度。
+</div>
+<h1>transition 属性</h1>
+
+<p>请把鼠标悬停在下面的 div 元素上，来查看过渡效果：</p>
+
+<div></div>
+
+<p><b>注释：</b>3D</p>
+<p><b>注释：</b>3D</p>
+
+<div></div>
+
+<p><b>注释：</b>当动画结束后，会变回最初的样式。</p>
+
+</body>
+
+
+</html>
