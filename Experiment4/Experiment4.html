@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        let i=1,sum=0;
+        while(i<=100){
+            i=i+1;
+            sum=sum+i;
+        }
+        document.write("1-100之间的和为：",sum)
+    </script>
+    <br/>
+     <script type="text/javascript">
+          var year=prompt("请输入年份，")
+        if(year%100==0){
+            if(year%400==0){
+                document.write(year+"是闰年");
+                document.write("<br/>")
+            }
+        }else if(year%4==0){
+            document.write(year+"是闰年");
+        }else{
+            document.write(year+"不是闰年");
+        }  
+        </script>
+        <br/>
+         <script type="text/javascript">
+            var v1=prompt("输入乘数：","");
+            var v2=prompt("输入被乘数:","");
+            if(isNaN(v1)||isNaN(v2)){
+                alert("输入数字不是数字类型");
+            }else{
+                v1=parseInt(v1);
+                v2=parseInt(v2);
+                var total=v1+v2;
+                document.write("结果是："+v1+"+"+v2+"="+total);
+            }
+         </script>
+         <br/>
+          <script type="text/javascript">
+        function sayHello(helloFun) {
+   
+        console.log(helloFun());
+        }
+        function helloChinese() {
+        return "你好";
+        }
+        function helloEnglish() {
+        return "Hello";
+        }
+        sayHello(helloChinese);
+          sayHello(helloEnglish);
+          </script>
+</head>
+<body>
+</body>
+</html>
