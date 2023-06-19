@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Experiment 6</title>
+  <script src="experiment6.js"></script>
+</head>
+<body onload="initializePage()">
+  <h1>Experiment 6</h1>
+  
+  <h2>1. 网页动态初始化</h2>
+  <p id="currentTime"></p>
+  <table id="dataTable">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </table>
+  <button onclick="addRow()">Add Row</button>
+  
+  <h2>2. 提交按钮事件</h2>
+  <button onclick="showAlert()">Submit</button>
+  
+  <h2>3. 隐藏/显示元素</h2>
+  <div id="element1" onclick="toggleVisibility('element2')">Click me to toggle visibility of Element 2</div>
+  <div id="element2">Element 2</div>
+  
+  <h2>4. 鼠标移动事件</h2>
+  <div id="mouseCoordinates" onmousemove="showCoordinates(event)">Move the mouse inside this box</div>
+  
+  <h2>5. 添加/删除元素</h2>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <button onclick="addItem()">Add Item</button>
+  <button onclick="removeItem()">Remove Item</button>
+</body>
+</html>
